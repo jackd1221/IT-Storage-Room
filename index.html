@@ -5,7 +5,21 @@
   <h1>Check Out an Item</h1>
   <form id="checkout-form">
     <label for="item">Item:</label>
-    <input type="text" id="item" name="item" required>
+    <select id="item" name="item" required>
+        <option value="">--Select Item--</option>
+        <option value="iPad Elementary">iPad Elementary</option>
+        <option value="iPad Middle">iPad Middle</option>
+        <option value="Keyboard iPad Case">Keyboard iPad Case</option>
+        <option value="iPad Case">iPad Case</option>
+        <option value="New iPad Charging Block">New iPad Charging Block</option>
+        <option value="Old iPad Charging Block">Old iPad Charging Block</option>
+        <option value="MacBook">MacBook</option>
+        <option value="MacBook Charging Block">MacBook Charging Block</option>
+        <option value="Apple TV">Apple TV</option>
+        <option value="USB C to USB C">USB C to USB C</option>
+        <option value="USB A to USB C">Heritage</option>
+        <option value="Charging Station">Charging Station</option>
+      </select>
   
     <label for="quantity">Quantity:</label>
     <input type="number" id="quantity" name="quantity" min="1" value="1" required>
