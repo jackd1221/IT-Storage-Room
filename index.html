@@ -54,9 +54,17 @@
     </select>
   
     <button type="submit">Submit</button>
+    <button type="button" id="clear-btn">Clear</button>
   </form>
 
-  <script>
+  <script>  
+  
+    const form = document.getElementById("checkout-form");
+    const clearBtn = document.getElementById("clear-btn");
+    clearBtn.addEventListener("click", () => {
+      form.reset();
+    });
+
     document.getElementById("checkout-form").addEventListener("submit", async (e) => {
       e.preventDefault();
   
